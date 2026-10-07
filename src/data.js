@@ -47,7 +47,7 @@ export const projects = [
     name: "StudyFlow",
     period: "Team leader, team of 4, January to May 2026",
     description:
-      "Led a team of four building a cross platform study app for iOS, Android, web, macOS, and Windows. It pulls live course and assignment data from the Canvas LMS API and uses AI to turn uploaded course materials into study guides. I built the backend AI pipeline, debugged across the codebase, and kept four active branches merged. Tested with real students before launch.",
+      "Led a team of four building a cross platform study app for iOS, Android, web, macOS, and Windows. It pulls live course and assignment data from the Canvas LMS API and uses AI to turn uploaded course materials into study guides. I built the backend AI pipeline and debugged across the full codebase. Tested with real students before launch.",
     tags: ["Flutter", "Dart", "Firebase", "Firestore", "Groq API"],
     link: "https://github.com/NaveedShirzadi/StudyFlow",
     linkLabel: "View on GitHub",
@@ -56,26 +56,35 @@ export const projects = [
     name: "CSUN FMA Website",
     period: "Live, as FMA VP of Technology",
     description:
-      "The public website for a Financial Management Association of over 100 members, with events, officers, membership, and resources. Firestore security rules limit editing to an allowlisted set of signed in officers while everything stays publicly readable, so officers can update content without a developer.",
+      "The public website for a Financial Management Association of over 100 members, with events, officers, membership, and resources. Firestore security rules limit editing to an allowlisted set of signed in officers while everything stays publicly readable. I also set up a GitHub Actions workflow that deploys every push to Firebase Hosting and connected a purchased custom domain.",
     tags: ["Firebase", "Firebase Auth", "Firestore", "GitHub Actions"],
-    link: "https://csun-fma.web.app",
+    link: "https://csun-fma.com",
     linkLabel: "Visit the live site",
   },
   {
-    name: "8 Puzzle Game",
-    period: "C programming, fall 2025",
+    name: "Personal Portfolio Website",
+    period: "Solo project, since October 2026",
     description:
-      "A command line sliding puzzle game written in C with dynamic two dimensional arrays, move validation, and manual memory management across more than 200 lines of documented code. Published to GitHub.",
-    tags: ["C", "Memory management", "Git"],
-    link: null,
-    linkLabel: null,
+      "The site you're on. Built with React and Vite using a component based structure to present projects, experience, and a downloadable resume. Continuous deployment through GitHub Actions means every push to the main branch builds and publishes the site to Firebase Hosting automatically.",
+    tags: ["React", "Vite", "GitHub Actions", "Firebase Hosting"],
+    link: "https://github.com/NaveedShirzadi/Portfolio",
+    linkLabel: "View the source",
   },
   {
     name: "Custom Java Array List",
     period: "Project coordinator, fall 2025",
     description:
-      "Implemented an array list data structure in Java from scratch, with dynamic resizing, insertion and removal, and index based access across modular classes. Coordinated tasks across the team and ran code reviews to keep implementations consistent.",
+      "Implemented an array list data structure in Java from scratch, with dynamic resizing, element insertion and removal, and index based access across a set of modular class files.",
     tags: ["Java", "Data structures"],
+    link: null,
+    linkLabel: null,
+  },
+  {
+    name: "8 Puzzle Game",
+    period: "C programming, fall 2025",
+    description:
+      "A command line sliding puzzle game written in C with dynamic two dimensional arrays, move validation, and manual memory management.",
+    tags: ["C", "Memory management"],
     link: null,
     linkLabel: null,
   },
@@ -107,10 +116,11 @@ export const skills = [
     group: "Tools",
     items: [
       "Git and GitHub",
-      "Firebase Hosting",
       "GitHub Actions",
+      "Firebase Hosting",
       "Bash",
       "Maven",
+      "Ubuntu",
       "IntelliJ IDEA",
       "VS Code",
     ],
@@ -131,7 +141,7 @@ export const involvements = [
     role: "VP of Technology",
     org: "Financial Management Association (FMA), since May 2026",
     detail:
-      "Built and run the club website for an organization of 100+ members, including editor access controls, and manage club communications through Discord and the executive board email.",
+      "Built and run the club website for an organization of 100+ members, with Firestore security rules that limit editing to approved officers, automatic deployment through GitHub Actions, and a custom domain.",
   },
   {
     role: "Treasurer",
@@ -155,6 +165,6 @@ export const involvements = [
     role: "Guest Relations Student Assistant",
     org: "Student Outreach and Recruitment, CSUN, since October 2025",
     detail:
-      "Help 40 to 45 visitors a day at the front desk, run campus tours, and support four large recruitment events including CSUN Open House and Admitted Matadors Day.",
+      "Help 40 to 45 visitors a day at the front desk, run campus tours, and support recruitment events including CSUN Open House and Admitted Matadors Day.",
   },
 ];
